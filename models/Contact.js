@@ -1,8 +1,14 @@
 class Contact {
-    constructor(email, password) {
-        this.email = email;
-        this.password = password;
+    constructor(details) {
+        this.surname = details.surname;
+        this.otherNames = details.otherNames;
+        this.nationalId = details.nationalId;
+        this.passportNumber = details.passportNumber;
+        this.alienId = details.alienId;
+        this.serviceId = details.serviceId;
+        this.dateOfBirth = details.dateOfBirth;
+        this.facilities = null;
     }
 }
 
-exports.Contact = Contact;
+module.exports = Contact;
